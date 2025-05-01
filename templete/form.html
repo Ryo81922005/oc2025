@@ -5,7 +5,7 @@
 <title>観光案内サイト・旅行会社向け 無料ホームページテンプレート tp_travel1</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
 <div class="header-inner">
 
-<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="Travel Logo"></a></h1>
+<h1 id="logo"><a href="index.html"><img src="../images/logo.png" alt="Travel Logo"></a></h1>
 
 <!--開閉ブロック-->
 <div id="menubar">
@@ -37,7 +37,7 @@
 	<li><a href="destinations.html#link3">観光地メニュー3</a></li>
 	</ul>
 </li>
-<li class="current"><a href="activities.html">アクティビティ<span>Activities</span></a>
+<li><a href="activities.html">アクティビティ<span>Activities</span></a>
 	<ul>
 	<li><a href="activities_item.html">アクティビティ詳細</a></li>
 	<li><a href="activities_item.html">アクティビティ詳細</a></li>
@@ -58,71 +58,51 @@
 
 <div id="container">
 
-<div id="contents" class="bg2">
+<div id="contents">
 
 <main>
 
 <section>
 
-<h2>アクティビティスポット詳細<span class="small">Popular Activity Spots Now</span></h2>
+<h2>お問い合わせ<span class="small">Contact</span></h2>
 
-<!--大きな画像を読み込む為のボックスなので削除しないで下さい-->
-<div class="thumbnail-view-parts"></div>
-
-<!--サムネイルブロック-->
-<div class="thumbnail-parts">
-<img src="images/1.jpg" alt="">
-<img src="images/2.jpg" alt="">
-<img src="images/3.jpg" alt="">
-</div>
-
-<h3>サムネイルチェンジの使い方</h3>
-<p>html側を参考に、表示させたい画像は全て「thumbnail-parts」内に入れて下さい。<br>
-大きな画像も兼用するので、ある程度大きめにしておきます。</p>
-<p>※必ずthumbnail-view-partsブロックの直後にthumbnail-partsブロックを配置して下さい。<br>
-間に他のタグがあると正常に動作しません。</p>
-
-</section>
-
-<section>
-
-<h2>予約状況</h2>
-
-<div class="ta-box">
-<table class="ta2">
-<caption>大見出しが必要ならcaptionを使う。不要ならcaptionの１行削除。</caption>
+<!-- フォームの情報はここからです -->
+<form name="form1" enctype="multipart/form-data" method="post" action="<?php echo $_SERVER["REQUEST_URI"];?>">
+<input type="hidden" name="mode" value="form">
+<table class="ta1">
+<!-- 入力／確認 -->
+<!--<tr><th class="tamidashi" colspan="2">お問い合わせフォーム</th></tr>-->
 <tr>
-<th>&nbsp;</th>
-<th>8/1</th>
-<th>8/2</th>
-<th>8/3</th>
-<th>8/4</th>
-<th>8/5</th>
-<th>8/6</th>
+<th width="150">お名前<span style="color:red">※</span></th>
+<td>
+<input name="item1" value="<?php echo $form["item1"];?>" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item1"]) echo '<div style="color:red">' . $msg["item1"] . '</div>'; ?>
+</td>
 </tr>
 <tr>
-<th>午前</th>
-<td>×</td>
-<td>△</td>
-<td>○</td>
-<td>○</td>
-<td>○</td>
-<td>○</td>
+<th width="150">メールアドレス<span style="color:red">※</span></th>
+<td>
+<input name="item2" value="<?php echo $form["item2"];?>" type="text" size="40" maxlength="500" class="ws">
+<?php if ($msg["item2"]) echo '<div style="color:red">' . $msg["item2"] . '</div>'; ?>
+</td>
 </tr>
 <tr>
-<th>午後</th>
-<td>×</td>
-<td>△</td>
-<td>○</td>
-<td>○</td>
-<td>△</td>
-<td>×</td>
+<th>お問い合わせ内容<span style="color:red">※</span></th>
+<td>
+<textarea name="item3" cols="40" rows="10" class="wl"><?php echo $form["item3"]; ?></textarea>
+<?php if ($msg["item3"]) echo '<div style="color:red">' . $msg["item3"] . '</div>'; ?>
+</td>
 </tr>
 </table>
-</div>
 
-<p>このテーブル（.ta2）は、画面幅が狭くなると自動で横スクロールが出ます。<br>
-横スクロールさせたい場合は、ta2の外側のta-boxと必ずセットで使って下さい。逆に横スクロールさせたくなければta-boxを外して下さい。</p>
+<p class="c">
+<input type="submit" value="内容を確認する">
+&nbsp;
+<input type="reset" value="リセット">
+</p>
+
+</form>
+<!-- フォームの情報はここまでです -->
 
 </section>
 
@@ -219,14 +199,14 @@
 
 <!--スライドショー（slick）-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/slick.js"></script>
+<script src="../js/slick.js"></script>
 
 <!--パララックス（inview）-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-<script src="js/jquery.inview_set.js"></script>
+<script src="../js/jquery.inview_set.js"></script>
 
 <!--このテンプレート専用のスクリプト-->
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>
