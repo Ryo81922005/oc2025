@@ -5,7 +5,7 @@
 <title>観光案内サイト・旅行会社向け 無料ホームページテンプレート tp_travel1</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="description" content="ここにサイト説明を入れます">
-<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="../css/style.css">
 </head>
 
 <body>
@@ -22,7 +22,7 @@
 
 <div class="header-inner">
 
-<h1 id="logo"><a href="index.html"><img src="images/logo.png" alt="Travel Logo"></a></h1>
+<h1 id="logo"><a href="index.html"><img src="../images/logo.png" alt="Travel Logo"></a></h1>
 
 <!--開閉ブロック-->
 <div id="menubar">
@@ -44,7 +44,7 @@
 	<li><a href="activities_item.html">アクティビティ詳細</a></li>
 	</ul>
 </li>
-<li><a href="events.html">イベント<span>Events</span></a></li>
+<li class="current"><a href="events.html">イベント<span>Events</span></a></li>
 <li><a href="faq.html">よく頂く質問<span>Faq</span></a></li>
 </ul>
 </nav>
@@ -58,42 +58,57 @@
 
 <div id="container">
 
-<div id="contents">
+<div id="contents" class="bg1">
 
 <main>
 
 <section>
 
-<form>
+<h2>イベント<span class="small">アイコンなしの場合</span></h2>
 
-<h2>お問い合わせ<span class="small">Contact</span></h2>
-<p>当ページと同じ３項目のお問い合わせフォーム（自動フォーム試用版）を簡単に使えるようにセットしています。<br>
-<span class="color-check">※当ページ（contact.html）はフォームの見本ページです。実際の自動フォームには使いませんのでご注意下さい。</span></p>
-<p><span class="color-check">自動フォームを使う場合（※編集に入る前にご確認下さい）</span><br>
-あなたのメールアドレス設定と、簡単な編集だけで使えます。<a href="https://template-party.com/file/formgen_manual_set2.html" target="_blank">こちらのマニュアルをご覧下さい。</a></p>
-<p><span class="color-check">自動フォームを使わない場合</span><br>
-テンプレートに梱包されている「form.html」「confirm.html」「finish.html」の3枚のファイルを削除して下さい。</p>
+<dl class="new">
 
-<table class="ta1">
-<tr>
-<th>お名前※</th>
-<td><input type="text" name="お名前" size="30" class="ws"></td>
-</tr>
-<tr>
-<th>メールアドレス※</th>
-<td><input type="text" name="メールアドレス" size="30" class="ws"></td>
-</tr>
-<tr>
-<th>お問い合わせ詳細※</th>
-<td><textarea name="お問い合わせ詳細" cols="30" rows="10" class="wl"></textarea></td>
-</tr>
-</table>
+<dt>2024.08.01</dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
 
-<p class="c">
-<input type="submit" value="内容を確認する">
-</p>
+<dt>2024.08.01</dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
 
-</form>
+<dt>2024.08.01</dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+<dt>2024.08.01</dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+<dt>2024.08.01</dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+</dl>
+
+</section>
+
+<section>
+
+<h2>イベント<span class="small">アイコンありの場合</span></h2>
+
+<dl class="new">
+
+<dt>2024.08.01<span>アイコン</span></dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+<dt>2024.08.01<span>アイコン</span></dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+<dt>2024.08.01<span class="icon-bg1">アイコン</span></dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+<dt>2024.08.01<span class="icon-bg2">アイコン</span></dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+<dt>2024.08.01<span>アイコン</span></dt>
+<dd>ここにイベント情報を入れます。サンプルテキスト。</dd>
+
+</dl>
 
 </section>
 
@@ -190,14 +205,14 @@
 
 <!--スライドショー（slick）-->
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="js/slick.js"></script>
+<script src="../js/slick.js"></script>
 
 <!--パララックス（inview）-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/protonet-jquery.inview/1.1.2/jquery.inview.min.js"></script>
-<script src="js/jquery.inview_set.js"></script>
+<script src="../js/jquery.inview_set.js"></script>
 
 <!--このテンプレート専用のスクリプト-->
-<script src="js/main.js"></script>
+<script src="../js/main.js"></script>
 
 </body>
 </html>
