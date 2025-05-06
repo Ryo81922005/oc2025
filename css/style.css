@@ -817,6 +817,7 @@ ul.icons {
 		font-size: 0.85rem;			/*文字サイズを85%*/
 		margin-top: 10vw;  		/*上に空けるスペース。画面幅100%＝100vwです。*/
 		white-space: nowrap;	/*改行しない*/
+		display: inline-block;	/*インラインブロックにする*/
 	}
 	
 	/*上のラインの装飾への追加設定*/
