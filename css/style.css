@@ -944,6 +944,10 @@ ul.icons {
 	gap: 5vw;				/*子要素同士に空けるマージン的な要素。画面幅100%＝100vwです。*/
 }
 
+.list-free h3{
+	white-space: nowrap;
+}
+
 /*bg3内のlist-freeの下マージンをなくす。そのままだと広く取りすぎるので。*/
 .bg3 .list-free {
 	margin-bottom: 0;
