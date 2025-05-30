@@ -1,6 +1,6 @@
 /* 質問URLに飛ぶボタン004 */
   .button005 a {
-    background: #eee;
+    background: #036d93;
     border-radius: 50px;
     position: relative;
     display: flex;
@@ -9,7 +9,7 @@
     margin: 0 auto;
     max-width: 260px;
     padding: 10px 25px;
-    color: #4c9ac0;
+    color: #eee;
     transition: 0.3s ease-in-out;
     font-weight: 500;
 }
