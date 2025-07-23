@@ -1,0 +1,28 @@
+.list2{
+    background: #fff;
+    margin-top: 1rem;
+    padding: 1rem;
+}
+
+.list2 h4{
+    margin-bottom: 0.5rem;   
+}
+
+@media (min-width: 901px) {
+    .list2 h4 {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 900px) {
+    .list2 h4 {
+        font-size: 13px;
+    }
+}
+
+.list2 p{
+    font-size: 0.85rem;
+    line-height: 1.5;
+    color: #333;
+    margin-bottom: 0.5rem;
+}
