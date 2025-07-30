@@ -199,6 +199,13 @@ $(function() {
 	});
 });
 
+$(function() {
+	$('.openclose2-parts').next().hide();
+	$('.openclose2-parts').click(function() {
+		$(this).next().slideToggle();
+		$('.openclose2-parts').not(this).next().slideUp();
+	});
+});
 
 //===============================================================
 // 詳細ページのサムネイル切り替え
@@ -287,6 +294,13 @@ $(function() {
 	});
 });
 
+$(function() {
+	$('.openclose2').next().hide();
+	$('.openclose2').click(function() {
+		$(this).next().slideToggle();
+		$('.openclose2').not(this).next().slideUp();
+	});
+});
 
 //===============================================================
 // bg3内にdivを作る
