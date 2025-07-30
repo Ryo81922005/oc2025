@@ -1,331 +1,214 @@
 
-    /*list-grid0（トップページの「今の季節に人気の観光地」で使っている３カラムボックス）
----------------------------------------------------------------------------*/
 .list-grid0 .list * {margin: 0;padding: 0;}
-
-/*ボックス１個あたり*/
 .list-grid0 .list {
     display: grid;
-	margin-bottom: 1rem;	/*下に空けるスペース*/
+	margin-bottom: 1rem;
 }
-
-/*ボックス内のp要素*/
 .list-grid0 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;	/*行間を狭くする*/
+	font-size: 0.85rem;
+	line-height: 1.5;
 }
-
-/*ボックス１個あたり*/
 .list-grid0 .list {
-	padding: 1rem;			/*ボックス内の余白。１文字分。*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr auto;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
-
-/*ボックス内のfigure画像*/
 .list-grid0 .list figure {
-	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin: -1rem;
+	margin-bottom: 0.5rem;
 }
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid0 {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(1, 1fr);
+		gap: 1rem;
 	}
-
-	/*ボックス１個あたり*/
 	.list-grid0 .list {
-		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+		margin-bottom: 0;
 	}
 
-	}/*追加指定ここまで*/
-    /*list-grid2（トップページの「今の季節に人気の観光地」で使っている３カラムボックス）
----------------------------------------------------------------------------*/
+	}
 .list-grid2 .list * {margin: 0;padding: 0;}
-
-/*ボックス１個あたり*/
 .list-grid2 .list {
     display: grid;
-	margin-bottom: 1rem;	/*下に空けるスペース*/
+	margin-bottom: 1rem;
 }
-
-/*ボックス内のp要素*/
 .list-grid2 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;	/*行間を狭くする*/
+	font-size: 0.85rem;
+	line-height: 1.5;
 }
-
-/*ボックス１個あたり*/
 .list-grid2 .list {
-	padding: 1rem;			/*ボックス内の余白。１文字分。*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr auto;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
-
-/*ボックス内のfigure画像*/
 .list-grid2 .list figure {
-	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin: -1rem;
+	margin-bottom: 0.5rem;
 }
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid2 {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
 	}
-
-	/*ボックス１個あたり*/
 	.list-grid2 .list {
-		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+		margin-bottom: 0;
 	}
 
-	}/*追加指定ここまで*/
-
-    /*list-grid2（トップページの「今の季節に人気の観光地」で使っている３カラムボックス）
----------------------------------------------------------------------------*/
+	}
 .list-grid2 .list * {margin: 0;padding: 0;}
-
-/*ボックス１個あたり*/
 .list-grid2 .list {
     display: grid;
-	margin-bottom: 1rem;	/*下に空けるスペース*/
+	margin-bottom: 1rem;
 }
-
-/*ボックス内のp要素*/
 .list-grid2 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;	/*行間を狭くする*/
+	font-size: 0.85rem;
+	line-height: 1.5;
 }
-
-/*ボックス１個あたり*/
 .list-grid2 .list {
-	padding: 1rem;			/*ボックス内の余白。１文字分。*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr auto;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
-
-/*ボックス内のfigure画像*/
 .list-grid2 .list figure {
-	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin: -1rem;
+	margin-bottom: 0.5rem;
 }
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid2 {
 		display: grid;
-		grid-template-columns: repeat(2, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(2, 1fr);
+		gap: 1rem;
 	}
-
-	/*ボックス１個あたり*/
 	.list-grid2 .list {
-		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+		margin-bottom: 0;
 	}
 
-	}/*追加指定ここまで*/
-
-    /*list-grid5（トップページの「今の季節に人気の観光地」で使っている３カラムボックス）
----------------------------------------------------------------------------*/
+	}
 .list-grid5 .list * {margin: 0;padding: 0;}
-
-/*ボックス１個あたり*/
 .list-grid5 .list {
     display: grid;
-	margin-bottom: 1rem;	/*下に空けるスペース*/
+	margin-bottom: 1rem;
 }
-
-/*ボックス内のp要素*/
 .list-grid5 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;	/*行間を狭くする*/
+	font-size: 0.85rem;
+	line-height: 1.5;
 }
-
-/*ボックス１個あたり*/
 .list-grid5 .list {
-	padding: 1rem;			/*ボックス内の余白。１文字分。*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr auto;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
-
-/*ボックス内のfigure画像*/
 .list-grid5 .list figure {
-	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin: -1rem;
+	margin-bottom: 0.5rem;
 }
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid5 {
 		display: grid;
-		grid-template-columns: repeat(5, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(5, 1fr);
+		gap: 1rem;
 	}
-
-	/*ボックス１個あたり*/
 	.list-grid5 .list {
-		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+		margin-bottom: 0;
 	}
 
-	}/*追加指定ここまで*/
-
-   /*list-grid4（トップページの「今の季節に人気の観光地」で使っている３カラムボックス）
----------------------------------------------------------------------------*/
+	}
 .list-grid4 .list * {margin: 0;padding: 0;}
-
-/*ボックス１個あたり*/
 .list-grid4 .list {
     display: grid;
-	margin-bottom: 1rem;	/*下に空けるスペース*/
+	margin-bottom: 1rem;
 }
-
-/*ボックス内のp要素*/
 .list-grid4 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;	/*行間を狭くする*/
+	font-size: 0.85rem;
+	line-height: 1.5;
 }
-
-/*ボックス１個あたり*/
 .list-grid4 .list {
-	padding: 1rem;			/*ボックス内の余白。１文字分。*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr auto;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
-
-/*ボックス内のfigure画像*/
 .list-grid4 .list figure {
-	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin: -1rem;
+	margin-bottom: 0.5rem;
 }
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid4 {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
 	}
-
-	/*ボックス１個あたり*/
 	.list-grid4 .list {
-		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+		margin-bottom: 0;
 	}
 
-	}/*追加指定ここまで*/
-
-      /*list-grid3（トップページの「今の季節に人気の観光地」で使っている３カラムボックス）
----------------------------------------------------------------------------*/
+	}
 .list-grid3 .list * {margin: 0;padding: 0;}
-
-/*ボックス１個あたり*/
 .list-grid3 .list {
     display: grid;
-	margin-bottom: 1rem;	/*下に空けるスペース*/
+	margin-bottom: 1rem;
 }
-
-/*ボックス内のp要素*/
 .list-grid3 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;	/*行間を狭くする*/
+	font-size: 0.85rem;
+	line-height: 1.5;
 }
-
-/*ボックス１個あたり*/
 .list-grid3 .list {
-	padding: 1rem;			/*ボックス内の余白。１文字分。*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr auto;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
-
-/*ボックス内のfigure画像*/
 .list-grid3 .list figure {
-	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin: -1rem;
+	margin-bottom: 0.5rem;
 }
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid3 {
 		display: grid;
-		grid-template-columns: repeat(3, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(3, 1fr);
+		gap: 1rem;
 	}
-
-	/*ボックス１個あたり*/
 	.list-grid3 .list {
-		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+		margin-bottom: 0;
 	}
 
-	}/*追加指定ここまで*/
-
-          /*list-grid4（トップページの「今の季節に人気の観光地」で使っている３カラムボックス）
----------------------------------------------------------------------------*/
+	}
 .list-grid4 .list * {margin: 0;padding: 0;}
-
-/*ボックス１個あたり*/
 .list-grid4 .list {
     display: grid;
-	margin-bottom: 1rem;	/*下に空けるスペース*/
+	margin-bottom: 1rem;
 }
-
-/*ボックス内のp要素*/
 .list-grid4 .list p {
-	font-size: 0.85rem;	/*文字サイズを85%に*/
-	line-height: 1.5;	/*行間を狭くする*/
+	font-size: 0.85rem;
+	line-height: 1.5;
 }
-
-/*ボックス１個あたり*/
 .list-grid4 .list {
-	padding: 1rem;			/*ボックス内の余白。１文字分。*/
-	background: #fff;		/*背景色*/
-    grid-template-rows: auto 1fr auto;	/*１つ目（この場合はfigure要素のサイズ）と「詳しくみる」ボタンの高さは自動に、２つ目（この場合はtextブロック））を残った幅で使う*/
-	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);	/*ボックスの影。右へ、下へ、ぼかし幅、0,0,0は黒の事で0.1は色が10%出た状態。*/
+	padding: 1rem;
+	background: #fff;
+    grid-template-rows: auto 1fr auto;
+	box-shadow: 5px 5px 20px rgba(0,0,0,0.1);
 }
-
-/*ボックス内のfigure画像*/
 .list-grid4 .list figure {
-	margin: -1rem;			/*画像を枠いっぱいに表示させる為に上の「.list-grid1 .list」のpadding分をネガティブマーインで指定*/
-	margin-bottom: 0.5rem;	/*画像の下に空けるスペース*/
+	margin: -1rem;
+	margin-bottom: 0.5rem;
 }
-
-	/*画面幅800px以上の追加指定*/
 	@media screen and (min-width:800px) {
-
-	/*listブロック全体を囲むブロック*/
 	.list-grid4 {
 		display: grid;
-		grid-template-columns: repeat(4, 1fr);	/*3列にする指定。4列にしたければrepeat(4, 1fr)とする。*/
-		gap: 1rem;	/*ブロックの間に空けるマージン的な指定*/
+		grid-template-columns: repeat(4, 1fr);
+		gap: 1rem;
 	}
-
-	/*ボックス１個あたり*/
 	.list-grid4 .list {
-		margin-bottom: 0;	/*下に空けるスペースをなくす*/
+		margin-bottom: 0;
 	}
 
-	}/*追加指定ここまで*/
+	}
 .timetable-color1 {
 		background: aqua;
 	}
