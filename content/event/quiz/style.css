@@ -15,27 +15,23 @@
 }
 
 .faq2 dt {
-	border-radius: 30px;		/*枠を角丸にする指定*/
-	margin-bottom: 1rem;	/*下に空けるスペース*/
-	background: #fff;		/*背景色*/
-	border: 1px solid #ccc;	/*枠線の幅、線種、色*/
-	text-indent: -2rem;				/*テキストのインデント。質問が複数行になった際に、テキストの冒頭を揃える為に設定しています。*/
-	padding: 0.5rem 1em 0.5rem 3em;		/*ボックス内の余白。ここを変更する場合、上のtext-indentも調整します。*/
+	border-radius: 30px;
+	margin-bottom: 1rem;
+	background: #fff;
+	border: 1px solid #ccc;
+	text-indent: -2rem;
+	padding: 0.5rem 1em 0.5rem 3em;
 }
-
-/*アイコン（Font Awesome）*/
 .faq2 dt::before {
-	font-family: "Font Awesome 6 Free";	/*Font Awesomeを使う指定*/
-    content: "Q";		/*アイコンのコード*/
-	padding-right: 1rem;	/*アイコンとテキストとの間のスペース*/
-	color: var(--primary-color);	/*アイコンの色。css冒頭で指定しているprimary-colorを読み込みます*/
+	font-family: "Font Awesome 6 Free";
+    content: "Q";
+	padding-right: 1rem;
+	color: var(--primary-color);
 }
-
-/*回答*/
 .faq2 dd {
-	padding: 0 1rem 1rem 3rem;	/*ボックス内の余白。上、右、下、左への順番。*/
+	padding: 0 1rem 1rem 3rem;
 }
 
 .openclose2 {
-	cursor: pointer;	/*カーソルの形状。リンクと同じスタイルにしてクリックできると認識してもらう。*/
+	cursor: pointer;
 }
